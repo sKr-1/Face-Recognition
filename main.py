@@ -43,7 +43,8 @@ def real_face_detect():
 
 
 # from PIL import ImageGrab
-path = 'C:\\Users\\hp\\OneDrive\\Desktop\\Images'
+#create folder(Images in this case and copy its path here
+path = 'C:\\Users\\lol\\OneDrive\\Desktop\\Images'
 images = []
 classNames = []
 myList = os.listdir(path)
@@ -144,6 +145,7 @@ def real_face_recognition():
 
 def face():
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    #put your own image path
     img = cv2.imread("Test/sag_sat.jpeg")
 
     imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
